@@ -1,20 +1,46 @@
+
+h1{
+    font-family: Tahoma;
+    display: grid;
+    text-align: center;
+    margin: 5px;
+    color: bisque;
+    border-radius: 10px;
+}
 .superior {
     font-family: Tahoma;
+    color: bisque;
+    font-size: 2em;
     display: flex;
     border-radius: 10px;
     flex-direction: row;
 }
-
 .superior div {
     background-color: bisque;
-
     margin: 5px;
     flex-basis: 100%;
     border-radius: 10px;
     text-align: center;
+    background: url("../recursos/fondo.png");
 
 }
+.nav{
+    display:grid;
+    flex-direction: row;
+    text-align: right;
 
+    border: 1px solid bisque;
+    padding: 10px;
+    background: url("../recursos/fondo.png");
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 20px;
+    font-size: 2em;
+}
+a:link, a:visited{
+    color: bisque;
+
+
+}
 .body {
     background: url("../recursos/horizontal.jpg");
     background-size: cover;
@@ -22,22 +48,38 @@
     background-color: black;
 
 }
-
+.centrar{
+  max-width: 300px;
+    max-height: 8000px;
+    border-radius: 30px;
+}
+p{
+    font-family: Tahoma;
+    color: bisque;
+    font-size: 2em;
+}
 @media (orientation: portrait) {
     .superior {
         flex-direction: column;
+        font-size: 3em;
     }
     .superior div{
         lex-basis: 100%;
     }
-
     .body {
         background: url("../recursos/retrato.jpg");
         background-size: cover;
-
+        background-repeat: no-repeat;
+        background-color: black;
     }
-}
-
-p {
-    font-size: 1.4em;
+    .centrar{
+        max-width: 300px;
+        max-height: 8000px;
+        border-radius: 30px;
+    }
+    p{
+        font-family: Tahoma;
+        color: bisque;
+        font-size: 1em;
+    }
 }
