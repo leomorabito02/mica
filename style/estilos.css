@@ -1,0 +1,32 @@
+.superior{
+    font-family:Tahoma ;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    flex-direction: row;
+}
+.superior div{
+    background-color: bisque;
+    margin: 5px;
+    width: 100px;
+    border-radius: 10px;
+
+}
+.body{
+    background: url("../recursos/horizontal.jpg");
+    background-size: cover;
+
+}
+@media (orientation: portrait){
+    .superior{
+        flex-direction: column;
+    }
+.body{
+    background: url("../recursos/retrato.jpg");
+    background-size: cover;
+
+}
+}
+p{
+    font-size: 1.4em;
+}
