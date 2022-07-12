@@ -1,32 +1,43 @@
-.superior{
-    font-family:Tahoma ;
+.superior {
+    font-family: Tahoma;
     display: flex;
-    background-color: white;
     border-radius: 10px;
     flex-direction: row;
 }
-.superior div{
+
+.superior div {
     background-color: bisque;
+
     margin: 5px;
-    width: 100px;
+    flex-basis: 100%;
     border-radius: 10px;
+    text-align: center;
 
 }
-.body{
+
+.body {
     background: url("../recursos/horizontal.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
 
 }
-@media (orientation: portrait){
-    .superior{
+
+@media (orientation: portrait) {
+    .superior {
         flex-direction: column;
     }
-.body{
-    background: url("../recursos/retrato.jpg");
-    background-size: cover;
+    .superior div{
+        lex-basis: 100%;
+    }
 
+    .body {
+        background: url("../recursos/retrato.jpg");
+        background-size: cover;
+
+    }
 }
-}
-p{
+
+p {
     font-size: 1.4em;
 }
