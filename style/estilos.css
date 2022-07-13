@@ -28,7 +28,7 @@ h1{
 .nav{
     display:grid;
     flex-direction: row;
-    text-align: right;
+    text-align: left;
 
     border: 1px solid bisque;
     padding: 10px;
@@ -54,7 +54,16 @@ a:link, a:visited{
     max-height: 800px;
     border-radius: 30px;
 }
-
+.footer{
+    color: bisque;
+    display: grid;
+    text-align: center;
+    font-size: 5em;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background: url("../recursos/fondo.png");
+}
 @media (orientation: portrait) {
     .superior {
         flex-direction: column;
